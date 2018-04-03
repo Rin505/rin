@@ -1,0 +1,8 @@
+
+
+var setHeader = function(header){
+  Session.set("headerData":header);
+}
+var getHeader = function(){
+  return Session.get("headerData")?Session.get("headerData"):{title:"Rin", isBackVisible:true};
+}

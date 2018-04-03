@@ -1,0 +1,27 @@
+
+<template name="goodnessList">
+
+  {{#each goodnessList}}
+
+    <div class="card w-75">
+    <div class="card-body">
+      <h1>{{title}}</h1>
+
+
+      <a href="{{pathFor 'goodnessDetail'}}">
+      <div class="progress">
+    <div class="progress-bar" role="progressbar" style="width:{{getProgress this._id}}%"
+      aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+    </div>
+      </div>
+  </a>
+  <br />
+
+      <button class="btn btn-danger js-count-increment">Affect</button>
+  </div>
+  </div>
+    <br />
+
+  {{/each}}
+
+</template>

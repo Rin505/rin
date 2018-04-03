@@ -1,0 +1,14 @@
+
+<template name="goodnessDetail">
+  <div class="card w-75">
+  <div class="card-body">
+    <h1>Balance</h1>
+    {{#each getCounters}}
+    <div class="progress">
+  <div class="progress-bar" role="progressbar" style="width: {{this}}%"></div>
+</div>
+{{/each}}
+<br />
+  </div>
+  </div>
+</template>

@@ -1,0 +1,17 @@
+<template name="header">
+
+  <ul class="nav" style="background-color: rgb(26, 131, 154);">
+    {{#if isBackVisible}}
+    <li class="nav-item">
+      <a class="nav-link" href="/">
+        <span class="fa fa-arrow-left" style="color: white;"></span>
+      </a>
+    </li>
+    {{/if}}
+    <li class="nav-item">
+      <a class="nav-link" href="#"
+      style="color: black; font-size: 32pt;">{{title}}</a>
+    </li>
+
+  </ul>
+</template>
