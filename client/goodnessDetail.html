@@ -1,12 +1,12 @@
 
 <template name="goodnessDetail">
-  <div class="card w-75">
-  <div class="card-body">
-    <h1>Balance</h1>
+  <div class="row">
+  <div class="col s12 fadeIn animated">
+    <h1>{{getTitle}}</h1>
     {{#each getCounters}}
+    {{date}}&nbsp;({{counter}})
     <div class="progress">
-      {{date}}
-  <div class="progress-bar" role="progressbar" style="width: {{value}}%"></div>
+  <div class="determinate red darken-2" style="width: {{value}}%"></div>
 </div>
 {{/each}}
 <br />

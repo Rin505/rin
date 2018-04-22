@@ -1,4 +1,6 @@
 <template name="rinLayout">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
   {{> header}}
 
   <div class="container">
@@ -7,10 +9,9 @@
 
   </div>
 
-<div class="fixed-action-btn" style="color: rgb(255, 255, 255); float: right;">
-<a href="/create" class="btn btn-info">
-  <i class="fa fa-plus"></i>
-</a>
-</div>
-
+  <div class="fixed-action-btn">
+    <a href='/create' class="btn-floating btn-large waves-effect waves-light teal">
+      <i class="material-icons">add</i>
+    </a>
+  </div>
 </template>

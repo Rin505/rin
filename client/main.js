@@ -12,7 +12,10 @@ getHeader = function() {
 getCurrentDay = function(){
   return moment().startOf("day").toDate();
 }
-
+rinDate = function(date){
+  var calendar = moment(date).calendar();
+  return calendar.split(" в ")[0];
+}
 initDbData = function(){
 
   var goodnessArr=[

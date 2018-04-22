@@ -3,21 +3,21 @@
 
   {{#each goodnessList}}
 
-    <div class="card w-75">
-    <div class="card-body">
+    <div class="col s12 m6 l4 fadeIn animated">
+    <div class="card">
+
       <h1>{{title}}</h1>
 
 
-      <a href="{{pathFor 'goodnessDetail'}}">
+      <a href="{{pathFor 'goodnessDetail'}}" class="grey-text text-darken-4">
       <div class="progress">
-    <div class="progress-bar" role="progressbar" style="width:{{getProgress this._id}}%"
-      aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+    <div class="determinate red darken-2"  style="width:{{getProgress this._id}}%">
     </div>
       </div>
   </a>
-  <br />
-
-      <button class="btn btn-danger js-count-increment">Affect</button>
+  <div class="card-action center-align">
+              <a class="waves-effect waves-light btn red lighten-2 js-count-increment">Нарушил</a>
+            </div>
   </div>
   </div>
     <br />
